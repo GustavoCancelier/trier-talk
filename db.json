@@ -1,0 +1,28 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Água mineral",
+      "fabricante": "Da guarda",
+      "preco": 2
+    },
+    {
+      "id": 2,
+      "nome": "Arroz",
+      "fabricante": "Tio João",
+      "preco": 2
+    },
+    {
+      "id": 3,
+      "nome": "Açucar mascavo",
+      "fabricante": "União",
+      "preco": 2
+    },
+    {
+      "id": 4,
+      "nome": "Soja",
+      "fabricante": "Cear",
+      "preco": 2
+    }
+  ]
+}

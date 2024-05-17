@@ -1,0 +1,6 @@
+<div class="t-container">
+  <tng-input-text class="mb-2" label="Nome" [(ngModel)]="produto!.nome"></tng-input-text>
+  <tng-input-text class="mb-2" label="Fabricante" [(ngModel)]="produto!.fabricante"></tng-input-text>
+  <tng-input-number class="mb-2" label="Preço" type="money" [(ngModel)]="produto!.preco"></tng-input-number>
+  <tng-button label="Fechar" (click)="onClose.emit()"></tng-button>
+</div>

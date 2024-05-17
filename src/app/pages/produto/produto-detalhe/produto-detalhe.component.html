@@ -1,0 +1,8 @@
+<div class="t-container">
+  <h3 class="mb-3">{{ produto.nome }}</h3>
+  <p class="mb-1 text-lg">{{ produto.fabricante }}</p>
+  <p class="mb-3 text-lg">Price: {{ produto.preco }}</p>
+  <tng-button label="Fechar" (click)="onClose.emit()"></tng-button>
+  <tng-button label="Excluir" (click)="excluir(produto)" class="ml-3"></tng-button>
+  <tng-button label="Incrementar preço" (click)="incrementarPreco(produto)" class="ml-3"></tng-button>
+</div>

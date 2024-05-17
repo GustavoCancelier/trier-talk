@@ -1,0 +1,7 @@
+<!-- <tng-page-header *ngIf="!isFrameModal" class="d-block"></tng-page-header> -->
+<div class="page-container" [class.page-container-header]="!isFrameModal">
+  <router-outlet></router-outlet>
+</div>
+<p-toast></p-toast>
+<app-custom-confirm-dialog></app-custom-confirm-dialog>
+<tng-modal-iframe-close></tng-modal-iframe-close>

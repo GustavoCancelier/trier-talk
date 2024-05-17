@@ -1,0 +1,26 @@
+<div class="t-container">
+  <p-card>
+    <div class="flex justify-content-center">
+      <ul>
+        <li class="flex align-items-center border-2 p-2 mt-2" *ngFor="let produto of produtos">
+          <p class="text-xl cursor-pointer" (click)="selectProduto(produto)">{{ produto.nome }}</p>
+          <tng-button label="Incrementar preço" (click)="incrementarPreco(produto)" class="ml-3"></tng-button>
+          <tng-button label="Editar" (click)="openEditar(produto)" class="ml-3"></tng-button>
+        </li>
+      </ul>
+    </div>
+  </p-card>
+  <p-card>
+    <app-produto-detalhe
+      #detalhes
+      *ngIf="selectedProduto"
+      [produto]="selectedProduto"
+      (onClose)="clearSelection()"
+      (onExcluir)="excluirSelected($event)"
+    ></app-produto-detalhe>
+    <app-produto-cadastro *ngIf="editOpen" [produto]="produtoToEdit!" (onClose)="onCloseEdit()"></app-produto-cadastro>
+  </p-card>
+
+  <app-a *ngIf="true"></app-a>
+  <app-b *ngIf="true"></app-b>
+</div>
